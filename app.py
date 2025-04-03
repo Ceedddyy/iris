@@ -19,7 +19,7 @@ petal_length = st.slider("Petal length (cm)", 1.0, 7.0, 1.0)
 petal_width = st.slider("Petal width (cm)", 0.1, 3.0, 0.1)
 
 #Predict
-input_data = np.array([sepal_length, sepal_width, petal_length, petal_width])
+input_data = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
 input_scaled = scaler.transform(input_data)
 prediction = model.predict(input_scaled)[0]
 
