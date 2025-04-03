@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-with open("iris_svm_model.pk", "rb") as f:
+with open("iris_svm_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 with open("iris_scaler.pkl", "rb") as f:
